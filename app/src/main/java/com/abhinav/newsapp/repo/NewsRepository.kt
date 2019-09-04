@@ -38,7 +38,7 @@ class NewsRepository(private val apiInterface: APIInterface) {
                 var sourceList = ArrayList<SourceEntity>()
                 item.sources.forEach {
                     var sourceEntity = SourceEntity()
-                    sourceEntity.id = it.id
+                    sourceEntity.id = it.id!!
                     sourceEntity.category = it.category
                     sourceEntity.country = it.country
                     sourceEntity.description = it.description

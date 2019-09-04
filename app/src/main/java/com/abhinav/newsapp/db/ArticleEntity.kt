@@ -11,7 +11,7 @@ import com.abhinav.newsapp.ui.NewsConstants
 @Entity(tableName = NewsConstants.T_ARTICLE)
 data class ArticleEntity(
         @PrimaryKey
-        var title: String? = "",
+        var title: String = "",
         var source: String? = "",
         var author: String? = "",
         var description: String? = "",

@@ -1,8 +1,8 @@
 package com.abhinav.newsapp.ui
 
-import android.arch.lifecycle.LifecycleActivity
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.abhinav.newsapp.R
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
  * Created by abhinav.sharma on 30/10/17.
  */
 
-class SplashActivity : LifecycleActivity() {
+class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
